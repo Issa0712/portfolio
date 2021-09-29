@@ -438,16 +438,16 @@
     </div>
     
     <div class="mobile_form">
-        <form class="contact__form" action="#">
+        <form class="contact__form" action="POST" data-netlify="true">
             <h3>Would Love To Hear From You</h3>
             <div class="form_group">
-                <input type="text" id="name" placeholder="Name" />
+                <input type="text" id="name" placeholder="Name" name="name" />
               </div>
               <div class="form_group">
-                <input type="text" id="email" placeholder="Email" />
+                <input type="text" id="email" placeholder="email" name="email" />
               </div>
               <div class="form_group">
-                <textarea id="message" placeholder="Message"></textarea>
+                <textarea id="message" placeholder="Message" name="message"></textarea>
       
                 <button>Send</button>
               </div>
