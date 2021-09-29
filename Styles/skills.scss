@@ -1,0 +1,87 @@
+@import './settings';
+
+.skills{
+    background: $primaryBgColor;
+    display: block;
+    height: fit-content;
+    margin-top: 30px;
+    padding: 60px 5vw;
+     
+     .heading{
+        color: $lightFont;
+        width: 100%;
+        margin: 0 0 20px 0;
+        font-size: $large;
+        line-height: 58px;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .skills_content{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        width: $full_size;
+          .skills_content_card{
+            border-radius: 8px;
+            box-shadow: 3px 5px 5px 1px #f7f6f6;         
+            margin: 5px 0;
+            transition: transform .1s;
+            width: 130px;
+            h3{
+                color: $lightFont;
+                font-size: 20px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            img{
+                height: 70%;
+                margin: 5px 0 0 10px;
+                width: 90%;
+            }
+        }
+    }
+}
+
+//DESKTOP MEDIA QUERY
+
+@media screen and (max-width:1180px) {
+    .skills{
+        .skills_content{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+ }
+
+ //TABLET SIZE
+
+ @media screen and (max-width:920px) {
+
+    .skills{
+        .heading{
+            text-align: center;
+        }
+        .skills_content{
+            padding: 0 auto;
+        }
+    }
+}
+
+//MOBILE AND SMALL DEVICES
+
+@media screen and (max-width: 638px) {
+    .skills {
+       padding: 40px 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 530px){
+    .skills{
+       .skills_content{
+           justify-content: space-evenly;
+       }
+
+    }
+}

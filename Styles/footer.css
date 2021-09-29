@@ -1,0 +1,18 @@
+.footer {
+  background: rgba(0, 0, 0, 0.8);
+  height: 30vh;
+  display: block;
+  padding: 120px 8vw;
+}
+
+.footer .footer_container {
+  border-top: 2px solid white;
+  width: 50%;
+}
+
+.footer .footer_container i {
+  color: white;
+  margin: 10px 3px;
+  font-size: 22px;
+}
+/*# sourceMappingURL=footer.css.map */

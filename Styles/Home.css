@@ -1,0 +1,254 @@
+header {
+  background: url("/images/wallpaperflare.com_wallpaper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+header .overlay input[type="checkbox"] {
+  display: none;
+}
+
+header .overlay input[type="checkbox"]:checked + .mobile-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+header .overlay .icons i:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+header .overlay .mobile-nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  overflow: hidden;
+  padding: 16px 20px 16px 16px;
+  position: fixed;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  width: 100%;
+  z-index: 3;
+}
+
+header .overlay .mobile-nav label i {
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  margin: 5px;
+  right: 0;
+}
+
+header .overlay .mobile-nav label i:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header .overlay .mobile-nav ul {
+  height: 80vh;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+header .overlay .mobile-nav ul li a {
+  color: white;
+  display: block;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+header .overlay .mobile-nav ul li a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+header .overlay .header_nav {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+header .overlay .header_nav h3 {
+  border: 2px solid white;
+  border-radius: 30px;
+  cursor: pointer;
+  margin: 20px;
+  padding: 10px;
+}
+
+header .overlay .header_nav h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+header .overlay .header_nav h3 a:hover {
+  color: black;
+}
+
+header .overlay .header_nav h3:hover {
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+  background: white;
+}
+
+header .overlay .header_nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .overlay .header_nav ul li {
+  margin: 20px;
+  list-style: none;
+}
+
+header .overlay .header_nav ul li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+header .overlay .header_nav ul li a:hover {
+  border-bottom: 2px solid white;
+  font-weight: 800;
+  padding: 10px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header .overlay .header_nav .mobile_menu {
+  display: none;
+  margin-right: 30px;
+}
+
+header .overlay .header_nav .mobile_menu .burger {
+  background-color: #fff;
+  height: 5px;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 35px;
+}
+
+header .overlay .icons {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 24px;
+  height: 80px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+}
+
+header .header_main {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .header_main h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+header .header_main h3 {
+  font-size: 32px;
+  text-align: center;
+}
+
+header .header_main h4 {
+  border: 1px solid silver;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+header .header_main h4:hover {
+  background: #fff;
+  color: black;
+}
+
+header .header_main h4 a {
+  color: white;
+  text-decoration: none;
+}
+
+header .header_main h4 a:hover {
+  color: black;
+}
+
+header .header_main .profile_pic {
+  height: 300px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+header .header_main .profile_pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 920px) {
+  header .overlay .header_nav ul {
+    display: none;
+  }
+  header .overlay .header_nav .mobile_menu {
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+  }
+  header .overlay .header_nav .mobile_menu:hover {
+    color: silver;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .home {
+    padding: 40px 20px;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

@@ -1,0 +1,191 @@
+.projects {
+  background: #fff;
+  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 120px 8vw;
+}
+
+.projects .projects_mobile {
+  display: none;
+}
+
+.projects .heading {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 58px;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.projects .projects_gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  width: 100%;
+}
+
+.projects .projects_gallery .project_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 400px;
+  width: 600px;
+}
+
+.projects .projects_gallery .project_card .info {
+  width: 40%;
+  margin: 10px;
+}
+
+.projects .projects_gallery .project_card .info h4 {
+  text-decoration: underline;
+}
+
+.projects .projects_gallery .project_card .info h4, .projects .projects_gallery .project_card .info h5, .projects .projects_gallery .project_card .info ul {
+  margin: 10px;
+}
+
+.projects .projects_gallery .project_card .info button {
+  background: black;
+  color: white;
+  cursor: pointer;
+  height: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  width: 100px;
+}
+
+.projects .projects_gallery .project_card .info button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.projects .projects_gallery .project_card .info button a {
+  color: white;
+}
+
+.projects .projects_gallery .project_card .info li {
+  list-style: circle;
+}
+
+.projects .projects_gallery .project_card .image {
+  width: 60%;
+}
+
+.projects .projects_gallery .project_card .image img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+@media screen and (max-width: 1448px) {
+  .projects .project_card {
+    margin: 30px auto;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .projects .heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .projects {
+    padding: 40px 20px;
+  }
+  .projects .project_card {
+    height: 550px;
+    width: 100%;
+  }
+  .projects .project_card .info {
+    width: 60%;
+  }
+  .projects .project_card .img {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .projects .projects_gallery .project_card .info button {
+    background: black;
+    margin: 5px 0 0 20px;
+  }
+  .projects .projects_gallery .project_card .info button a {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .projects .projects_mobile {
+    display: block;
+  }
+  .projects .projects_mobile .projects_mobile_card {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    margin: 30px 10px;
+  }
+  .projects .projects_mobile .projects_mobile_card h4 {
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 15px 0;
+  }
+  .projects .projects_mobile .projects_mobile_card ul {
+    list-style: circle;
+    margin: 15px 5px;
+  }
+  .projects .projects_mobile .projects_mobile_card .project_mobile_card_img {
+    width: 300px;
+    height: 350px;
+    margin: 15px 0px;
+  }
+  .projects .projects_mobile .projects_mobile_card .project_mobile_card_img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projects .projects_mobile .projects_mobile_card .project_mobile_button_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .projects .projects_mobile .projects_mobile_card .project_mobile_button_wrapper button {
+    background: black;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    width: 100px;
+  }
+  .projects .projects_mobile .projects_mobile_card .project_mobile_button_wrapper button:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .projects .projects_mobile .projects_mobile_card .project_mobile_button_wrapper button a {
+    color: white;
+    text-decoration: none;
+  }
+  .projects .projects_gallery {
+    display: none;
+  }
+}
+/*# sourceMappingURL=projects.css.map */

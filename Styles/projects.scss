@@ -1,0 +1,191 @@
+@import './settings';
+
+.projects{
+    background: $secondaryBgColor;
+    display: block;
+    height: fit-content;
+    padding: $section_padding;
+    .projects_mobile{
+        display: none;
+    }
+
+    .heading{
+        font-size: $large;
+        font-weight: 900;
+        line-height: 58px;
+        margin: 0 0 20px 0 ;
+        text-transform: uppercase;
+        width: $full_size;
+     }
+     
+     
+    .projects_gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+        width: $full_size;
+
+        .project_card{
+            display: flex;
+            height: 400px;
+            width: 600px;
+             .info{
+                width: 40%;
+                margin: 10px;
+                h4{
+                    text-decoration: underline;
+                }
+                h4,h5, ul{
+                    margin: 10px;
+                }
+                button{
+                    background: black;
+                    color: $lightFont;
+                    cursor: pointer;
+                    height: 40px;
+                    font-weight: bold;
+                    margin-top: 20px;
+                    text-align: center;
+                    width: 100px;
+                    &:hover{
+                        background: $primaryBgColor;
+                    }
+                    a{
+                        color: $lightFont;
+                    }
+                }
+                li{
+                    list-style: circle;
+                }
+            }
+            .image{
+                width:60%;
+                img{
+                    height: 100%;
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+         }
+     }
+}
+
+//LARGE FULL SCREEN DESKTOP AND UPWARDS
+@media screen and (max-width: 1448px){
+    .projects{
+        .project_card{
+            margin: 30px auto;
+        }
+    }
+}
+
+
+//TABLET
+
+@media screen and (max-width:920px) {
+    .projects{
+        .heading{
+            text-align: center;
+         }
+        }
+    }
+
+    //MOBILE
+
+    @media screen and (max-width: 638px){
+      .projects{
+        padding: 40px 20px;
+       .project_card{
+          height: 550px;
+          width: $full_size;
+          .info{
+              width: 60%;
+             }
+          .img{
+              width: 40%;
+         }
+        }
+    }
+ }
+
+
+ @media screen and (max-width: 530px){
+    
+    .projects{
+       .projects_gallery{
+           .project_card{
+               .info{
+                   button{
+                      background: black;
+                      margin: 5px 0 0 20px;
+                      a{
+                          color: $lightFont;
+                      }
+                  }
+                 }
+            }
+        }
+    }   
+}
+
+
+@media screen and (max-width: 380px){
+    .projects .projects_mobile{
+        display: block;
+       .projects_mobile_card{
+        border-bottom: 2px solid $primaryBgColor;   
+        margin: 30px 10px;
+           h4{
+               font-size: 20px;
+               text-decoration: underline;
+               margin: 15px 0;
+           }
+           
+           ul{
+               list-style: circle;
+               margin: 15px 5px;
+           }
+
+           .project_mobile_card_img{
+               width: 300px;
+               height: 350px;
+               margin: 15px 0px;
+               img{
+                   height: 100%;
+                   width: 100%;
+                   object-fit: contain;
+               }
+           }
+           .project_mobile_button_wrapper{
+               display: flex;
+               height: fit-content;
+               justify-content: space-evenly;
+               margin-top: 10px;
+               margin-bottom: 20px;
+               button{
+                background: black;
+                color: $lightFont;
+                cursor: pointer;
+                height: 40px;
+                font-weight: bold;
+                margin-top: 20px;
+                text-align: center;
+                width: 100px;
+                &:hover{
+                    background: $primaryBgColor;
+                }
+                a{
+                    color: $lightFont;
+                    text-decoration: none;
+                }
+               }
+           }
+       } 
+    }
+
+
+    .projects .projects_gallery{
+       display: none;
+   }
+}
