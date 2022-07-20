@@ -44,11 +44,6 @@
   width: auto;
 }
 
-.about .left .paragraph1 span {
-  color: turquoise;
-  font-weight: bolder;
-}
-
 .about .left .paragraph2 {
   color: #0f0f13;
   font-weight: 400;
@@ -56,6 +51,11 @@
   line-height: 28px;
   margin: 48px 0 40px;
   padding-top: 0px;
+}
+
+.about .left .paragraph2 span {
+  color: #2dcbbb;
+  font-weight: bolder;
 }
 
 .about .right {

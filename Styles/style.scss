@@ -1,6 +1,7 @@
 @import "Home";
 @import "about";
 @import "skills";
+@import "work_projects";
 @import "projects";
 @import "contact";
 @import "footer";
@@ -114,6 +115,8 @@ body{
        
      
     }
+
+
   
  @media screen and (max-width: 638px) {
      .home, .about, .projects, .skills, .contact, .footer{

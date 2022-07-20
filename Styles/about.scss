@@ -34,10 +34,7 @@
         line-height: 30px;
         width: auto;
 
-        span{
-            color: turquoise;
-            font-weight: bolder;
-          }
+       
        }
        .paragraph2{
                 color: #0f0f13;
@@ -46,6 +43,10 @@
                 line-height: 28px;
                 margin: $large 0 40px;
                 padding-top: 0px;
+                span{
+                    color: rgb(45, 203, 187);
+                    font-weight: bolder;
+                  }
                
        }
     }

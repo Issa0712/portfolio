@@ -33,8 +33,8 @@
 
 .skills .skills_content .skills_content_card {
   border-radius: 8px;
-  -webkit-box-shadow: 3px 5px 5px 1px #f7f6f6;
-          box-shadow: 3px 5px 5px 1px #f7f6f6;
+  -webkit-box-shadow: 2px 5px 3px -2px #f7f6f6;
+          box-shadow: 2px 5px 3px -2px #f7f6f6;
   margin: 5px 0;
   -webkit-transition: -webkit-transform .1s;
   transition: -webkit-transform .1s;
