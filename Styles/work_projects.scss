@@ -51,7 +51,7 @@ ul {
                 width: 100%;
                 height: 80px;
                 img{
-                    width: 100%;
+                    width: 85%;
                     height: 100%;
                 }
                 .mobile{
@@ -63,7 +63,7 @@ ul {
                 width: 100%;
                 height: 300px;
                 img{
-                    width: 100%;
+                    width: 85%;
                     height: 100%;
                 }
                 .mobile{
@@ -85,14 +85,14 @@ ul {
 @media screen and (max-width:850px) {
     .work_projects .work_projects_gallery .work_project .work_project_img_container .mobile {
         display: block;
-        width: 385px;
+        width: 330px;
         height: 140px;
     }
 
     .work_projects .work_projects_gallery .work_project .work_project_img_container_two .mobile{
         display: block;
         width: 530px;
-        height: 240px;
+        height: 225px;
     }
 
     .work_project_img_container,
@@ -109,7 +109,7 @@ ul {
 
 @media screen and (max-width:630px){
     .work_projects .work_projects_gallery .work_project .work_project_img_container .mobile {
-        width: 100%;
+        width: 90%;
     }
 
     .work_projects .work_projects_gallery .work_project .work_project_img_container_two .mobile {

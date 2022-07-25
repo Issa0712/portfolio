@@ -510,9 +510,9 @@ header .header_main .profile_pic img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px;
   width: 100%;
 }
@@ -635,7 +635,7 @@ header .header_main .profile_pic img {
 }
 
 .work_projects .work_projects_gallery .work_project .work_project_img_container img {
-  width: 100%;
+  width: 85%;
   height: 100%;
 }
 
@@ -649,7 +649,7 @@ header .header_main .profile_pic img {
 }
 
 .work_projects .work_projects_gallery .work_project .work_project_img_container_two img {
-  width: 100%;
+  width: 85%;
   height: 100%;
 }
 
@@ -660,13 +660,13 @@ header .header_main .profile_pic img {
 @media screen and (max-width: 850px) {
   .work_projects .work_projects_gallery .work_project .work_project_img_container .mobile {
     display: block;
-    width: 385px;
+    width: 330px;
     height: 140px;
   }
   .work_projects .work_projects_gallery .work_project .work_project_img_container_two .mobile {
     display: block;
     width: 530px;
-    height: 240px;
+    height: 225px;
   }
   .work_project_img_container .work_project_image,
   .work_project_img_container_two .work_project_image {
@@ -676,7 +676,7 @@ header .header_main .profile_pic img {
 
 @media screen and (max-width: 630px) {
   .work_projects .work_projects_gallery .work_project .work_project_img_container .mobile {
-    width: 100%;
+    width: 90%;
   }
   .work_projects .work_projects_gallery .work_project .work_project_img_container_two .mobile {
     width: 100%;
