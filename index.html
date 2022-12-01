@@ -16,7 +16,7 @@
        <div class="overlay">
        <!--mobile nav-->
         <input type="checkbox" id="mobile-nav" />
-        <div class="mobile-nav">
+        <nav class="mobile-nav">
             <label for="mobile-nav">
                 <i class="fa fa-close"></i>
             </label>
@@ -24,40 +24,38 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#work_projects">Work Projects</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     <!--End of mobile nav-->
        <!--website navigation bar on desktop screen-->
-        <div class="header_nav">
+        <nav class="header_nav">
           <h3><a href="#home">Portfolio</a></h3>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#work_projects">Work Projects</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
          </ul>
         
          <!--burger menu for mobile dropdown-->
-         <div class="mobile_menu">
+         <div class="mobile_menu" aria-label="mobile_menu_control">
            <div class="burger line1"></div>
            <div class="burger line2"></div>
            <div class="burger line3"></div>
         </div>
-       </div>
+    </nav>
 
          <!--social links on header-->
-         <div class="icons">
+         <div class="icons" aria-label="social_media_links">
             <i class="fab fa-facebook"></i>
             <i class="fab fa-twitter-square"></i>
             <i class="fab fa-instagram"></i>
         </div>
          <!--showcase area on header-->
-        <div class="header_main">
+        <div class="header_main" aria-label="showcase_header">
             <h1>Hello I am Issa Mohamed</h1>
             <h3>A front end web developer at boots.com</h3> 
             <h4><a href="/Issa_Mohamed_Resume (8).pdf" download=""> View My Resume</a></h4>   
@@ -69,18 +67,18 @@
 
   <!--About section-->
        <section id="about" class="about">
-            <div class="left">
+            <div class="left" aria-label="left_side_about">
                 <h1 class="heading">Nice To Meet You</h1>
-                <div class="img_smallscreen">
-                    <img src="/images/profile_img.jpg" alt="">
+                <div class="img_smallscreen" aria-label="image_small_screen">
+                    <img src="/images/profile_img.jpg" alt="profile_img">
                 </div>
                 <p class="paragraph1">I am currently a front end web developer at Boots.com, working within the digital experience team (DX) at Boots headquarters in Nottingham, UK. I have been involved in many interesting projects and events which has driven the business to recent success. Working alongside stakeholders, designers and copywriters I have been able to create and work on numerous front-end assets for events such as Love Island, Fathers day, Mothers day and valentines day.</p>
                 <p class="paragraph2">I enjoy learning and reading about the latest technologies in the industry. I am currently learning some backend technologies including <span>Node Js</span>, <span>Express</span> and <span>Mongo Db</span> in order to help me ultimately become a fullstack developer.</p>
              </div>
 
-            <div class="right">
+            <div class="right" aria-label="right_side_about_section">
                 <div class="img_container">
-                    <img src="./images/profile_img.jpg" alt="" srcset="">
+                    <img src="./images/profile_img.jpg" alt="profile_img">
                 </div>
                 <h3>Attributes I Bring</h3>
 
@@ -120,112 +118,69 @@
  
    <section id="skills" class="skills">
        <h1 class="heading">Skills</h1>
-       <div class="skills_content">
+       <div class="skills_content" aria-label="skills_content">
            <div class="skills_content_card">
                <h3>html</h3>
-               <img src="./images/logos/html5.png" alt="" srcset="">
+               <img src="./images/logos/html5.png" alt="html logo">
            </div>
-           <div class="skills_content_card">
+           <div class="skills_content_card" aria-label="skills_content_card">
             <h3>css</h3>
-            <img src="images/logos/css3.png" alt="" srcset="">
+            <img src="images/logos/css3.png" alt="css logo">
         </div>
-        <div class="skills_content_card">
+        <div class="skills_content_card" aria-label="skills_content">
             <h3>javascript</h3>
-            <img src="./images/logos/javascript.png" alt="" srcset="">
+            <img src="./images/logos/javascript.png" alt="javascript logo">
         </div>
-        <div class="skills_content_card">
+        <div class="skills_content_card" aria-label="skills_content">
             <h3>React JS</h3>
-            <img src="images/logos/react.png" alt="" srcset="">
+            <img src="images/logos/react.png" alt="react logo">
         </div>
-        <div class="skills_content_card">
+        <div class="skills_content_card" aria-label="skills_content">
          <h3>Sass</h3>
-         <img src="images/logos/sass.png" alt="" srcset="">
+         <img src="images/logos/sass.png" alt="sass logo">
      </div>
-     <div class="skills_content_card">
+     <div class="skills_content_card" aria-label="skills_content">
          <h3>NPM</h3>
-         <img src="images/logos/file_type_npm_icon_130297.png" alt="" srcset="">
+         <img src="images/logos/file_type_npm_icon_130297.png" alt="npm logo">
      </div>
     
-    <div class="skills_content_card">
+    <div class="skills_content_card" aria-label="skills_content">
         <h3>Webpack</h3>
-        <img src="images/logos/webpack.png" alt="" srcset="">
+        <img src="images/logos/webpack.png" alt="webpack logo">
     </div>
-    <div class="skills_content_card">
+    <div class="skills_content_card" aria-label="skills_content">
         <h3>Photoshop</h3>
-        <img src="images/logos/PS.png" alt="" srcset="">
+        <img src="images/logos/PS.png" alt="photoshop logo">
     </div>
-    <div class="skills_content_card">
+    <div class="skills_content_card" aria-label="skills_content">
         <h3>Coremedia</h3>
-        <img src="images/logos/CM.png" alt="" srcset="">
+        <img src="images/logos/CM.png" alt="Coremedia logo">
     </div>
-    <div class="skills_content_card">
+    <div class="skills_content_card" aria-label="skills_content">
         <h3>AEM</h3>
-        <img src="images/logos/AEM.png" alt="" srcset="">
+        <img src="images/logos/AEM.png" alt="AEM logo">
     </div>
-    <div class="skills_content_card">
+    <div class="skills_content_card" aria-label="skills_content">
         <h3>Git</h3>
-        <img src="images/logos/git.png" alt="" srcset="">
+        <img src="images/logos/git.png" alt="git logo">
     </div>
-    <div class="skills_content_card">
+    <div class="skills_content_card" aria-label="skills_content">
         <h3>Node JS</h3>
-        <img src="images/logos/nodejs.png" alt="" srcset="">
+        <img src="images/logos/nodejs.png" alt="node js logo">
     </div>
        </div>
     </section>
 
 
-    <section id="work_projects" class="work_projects">
-    <h1 class="heading">Work Projects</h1>
-    <p class="paragraph">I am currently working at Boots UK where I have been involved in many interesting projects and events which has driven the business to recent success. Working alongside stakeholders, designers and copywriters within the DX (Digital experience) team I have been able to create and work on numerous front-end assets for events such as: 
-    </p>
-    <ul>
-        <li>Valentines Day</li>
-        <li>Fathers Day</li>
-        <li>Mothers Day</li>
-        <li>Love Island</li>
-        <li>All Together Beautiful Campaign</li>
-    </ul>
-
-<p class="paragraph">I also done some design work at boots including photo editing and processing using <span>Photoshop</span>. I am also highly skilled in using <span>Coremedia</span> and <span>Adobe experience manager</span> these are the two Content management systems (CMS) used at boots.com</p>
-    <div class="work_projects_gallery">
-
-       
-        <div class="work_project">
-            <h3 class="work_project_title"> Tickers </h3>
-            <div class="work_project_img_container">
-                <img src="images/valentines_ticker.jpg" alt="ticker" class="work_project_image">
-                <img src="images/mobile_ticker_valDay.png" class="mobile" alt="ticker">
-             </div>
-        </div>
-
-        <div class="work_project" style="margin-top: 65px">
-            <h3 class="work_project_title"> Edge to Edge components </h3>
-            <div class="work_project_img_container_two">
-                <img src="images/fathersDay_edge_to_edge.jpg" alt="ticker" class="work_project_image">
-                <img src="images/mobile_edge.png" class="mobile" alt="ticker">
-             </div>
-        </div>
-
-        <div class="work_project">
-            <h3 class="work_project_title">Banners </h3>
-            <div class="work_project_img_container">
-                <img src="images/love_island_banner.jpg" alt="ticker" class="work_project_image">
-                <img src="images/mobile_banner.png" class="mobile" alt="ticker" srcset="">
-             </div>
-        </div>
-
-    </div>
-
-    <p class="paragraph">I have also worked on Waiting list, tables, carousles, navigations and ingrid-content tiles (more in the CV). </p>
-  
-</section>
+   
 
 
    <section id="projects" class="projects">
     <h1 class="heading">Personal Projects</h1>
-     <!--mobile version of projects-->
-    <div class="projects_mobile">
-        <div class="projects_mobile_card">
+
+     <!--mobile screen size version of the projects section-->
+    <div class="projects_mobile" aria-label="projects_mobile">
+        <div class="projects_mobile_card" aria-label="projects_mobile_card">
             <h4>COVID-19 Tracker</h4>
             <p>See the latest coronavirus figures for all the countries across the world</p>
             <ul>
@@ -245,7 +200,7 @@
             </div>
         </div>
 
-        <div class="projects_mobile_card">
+        <div class="projects_mobile_card" aria-label="projects_mobile_card">
             <h4>Weather App</h4>
             <p>A node weather app with a server and built api to search the weather in any city in the world</p>
             <ul>
@@ -263,7 +218,7 @@
             </div>
         </div>
 
-        <div class="projects_mobile_card">
+        <div class="projects_mobile_card" aria-label="projects_mobile_card">
             <h4>Recipe App</h4>
             <p>A recipe app that allows you to store delete and track recipes to make your favourite dishes</p>
             <ul>
@@ -280,7 +235,7 @@
             </div>
         </div>
 
-        <div class="projects_mobile_card">
+        <div class="projects_mobile_card" aria-label="projects_mobile_card">
             <h4>Hangman Game</h4>
             <p>Take a look at the old school game of hangman</p>
             <ul>
@@ -297,7 +252,7 @@
             </div>
         </div>
 
-        <div class="projects_mobile_card">
+        <div class="projects_mobile_card" aria-label="projects_mobile_card">
             <h4>Burger Delight</h4>
             <p>A burger resturants landing website</p>
             <ul>
@@ -314,7 +269,7 @@
             </div>
         </div>
 
-        <div class="projects_mobile_card">
+        <div class="projects_mobile_card" aria-label="projects_mobile_card">
             <h4>Lyft Clone</h4>
             <p>A cloned website of the american ridesharing company lyft</p>
             <ul>
@@ -332,7 +287,7 @@
         </div>
 
 
-        <div class="projects_mobile_card">
+        <div class="projects_mobile_card" aria-label="projects_mobile_card">
             <h4>Dine Time Resturant Finder </h4>
             <p>A recipe app that allows you to store delete and track recipes to make your favourite dishes</p>
             <ul>
@@ -352,7 +307,7 @@
     </div>
 
      <!--larger screen project section-->
-    <div class="projects_gallery">
+    <div class="projects_gallery" aria-labelledby="large_screen_project_gallery">
         <div class="project_card">
             <div class="info">
             <h4>COVID-19 Tracker</h4>
@@ -536,14 +491,14 @@
     <div class="mobile_form">
         <form class="contact__form" action="POST" data-netlify="true">
             <h3>Would Love To Hear From You</h3>
-            <div class="form_group">
-                <input type="text" id="name" placeholder="Name" name="name" />
+            <div class="form_group" aria-labelledby="contact__form">
+                <input type="text" id="name" placeholder="Name" name="name" aria-labelledby="contact__form" />
               </div>
               <div class="form_group">
-                <input type="text" id="email" placeholder="email" name="email" />
+                <input type="text" id="email" placeholder="email" name="email" aria-labelledby="contact__form" />
               </div>
-              <div class="form_group">
-                <textarea id="message" placeholder="Message" name="message"></textarea>
+              <div class="form_group" aria-labelledby="contact__form">
+                <textarea id="message" placeholder="Message" name="message" aria-labelledby="contact__form"></textarea>
       
                 <button>Send</button>
               </div>
@@ -553,7 +508,7 @@
    
 
 </section>
-<section id="footer" class="footer">
+<footer id="footer" class="footer">
     <div class="footer_container">
         <i class="fab fa-facebook"></i>
         <i class="fab fa-twitter-square"></i>
@@ -561,7 +516,7 @@
         <h4><a href="#home">Back to top</a></h4>
     </div>
     <p style="color:white">Copyright 	&#169; 2021 Created By Issa Mohamed</p>    
-</section>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

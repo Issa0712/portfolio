@@ -54,7 +54,7 @@
 }
 
 .about .left .paragraph2 span {
-  color: #2dcbbb;
+  color: #0f0f13;
   font-weight: bolder;
 }
 
@@ -65,7 +65,7 @@
 
 .about .right h3 {
   font-size: 22px;
-  margin: 10px;
+  margin: 20px;
   padding: 10px;
 }
 
@@ -110,7 +110,7 @@
 }
 
 .about .right .list_container ul li i {
-  color: turquoise;
+  color: #0f0f13;
   font-size: 26px;
   padding-right: 10px;
 }
@@ -214,7 +214,7 @@
     padding: 3px;
   }
   .about .right .list_container_mobile ul li i {
-    color: turquoise;
+    color: black;
     font-size: 26px;
     padding-right: 10px;
   }
